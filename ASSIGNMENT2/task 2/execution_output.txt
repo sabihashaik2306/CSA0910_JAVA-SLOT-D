@@ -1,0 +1,14 @@
+\nPlaylist size: 1000
+Add-at-end ArrayList ns: 377731 | LinkedList ns: 757975
+Front insert x1000 ArrayList ns: 622844 | LinkedList ns: 427024
+Random get x10000 ArrayList ns: 1602968 | LinkedList ns: 11868111
+\nPlaylist size: 5000
+Add-at-end ArrayList ns: 436908 | LinkedList ns: 868919
+Front insert x1000 ArrayList ns: 453303 | LinkedList ns: 107459
+Random get x10000 ArrayList ns: 799486 | LinkedList ns: 21457020
+\nPlaylist size: 10000
+Add-at-end ArrayList ns: 630646 | LinkedList ns: 599600
+Front insert x1000 ArrayList ns: 841599 | LinkedList ns: 348487
+Random get x10000 ArrayList ns: 658086 | LinkedList ns: 43995585
+\nArrayDeque Up Next order: [1, 2, 3]
+Complexity: ArrayList get O(1), middle/front insert O(n); LinkedList indexed get O(n), end operations O(1); ArrayDeque end operations O(1) amortized.
