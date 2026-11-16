@@ -1,0 +1,6 @@
+HashMap (order unspecified): {MED102=103, MED101=101, MED104=104, MED103=100, MED105=102}
+TreeMap (code order): {MED101=101, MED102=103, MED103=100, MED104=104, MED105=102}
+LinkedHashMap (insertion order): {MED103=100, MED101=101, MED105=102, MED102=103, MED104=104}
+100000 HashMap lookups ns: 8104827
+Lookup checksum: 10200000
+Complexity: HashMap put/get O(1) average; TreeMap O(log n); LinkedHashMap O(1) average with order maintenance.
