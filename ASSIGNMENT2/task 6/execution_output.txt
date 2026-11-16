@@ -1,0 +1,3 @@
+Meena(S1) Kumar(S1) Lata(S2) Ravi(S3) John(S3) Asha(S5)
+PriorityQueue add/poll: O(log n); peek: O(1). Arrival counter preserves FIFO among equal severity.
+Fairness improvement: increase priority after a defined waiting-time threshold to reduce starvation.
