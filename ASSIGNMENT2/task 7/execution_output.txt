@@ -1,0 +1,7 @@
+Q7 redesign: Up Next queue front insertion bottleneck
+n=1000 | ArrayList front inserts ns=825557 | ArrayDeque front inserts ns=259823
+n=5000 | ArrayList front inserts ns=3187058 | ArrayDeque front inserts ns=461999
+n=10000 | ArrayList front inserts ns=9003571 | ArrayDeque front inserts ns=1498459
+Diagnosis: ArrayList shifts existing elements for front insertion (O(n) per insert).
+Redesign: ArrayDeque supports addFirst/addLast in amortized O(1), avoiding repeated shifts.
+Trade-off: ArrayDeque does not provide efficient indexed access; use it for deque/queue workloads.
