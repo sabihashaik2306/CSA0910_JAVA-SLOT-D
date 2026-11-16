@@ -1,0 +1,3 @@
+[Eagles(9,6), Bisons(9,4), Panthers(9,4), Cobras(6,1)]
+Bisons ranks above Panthers because points and goal difference tie, then Bisons is alphabetically first.
+Sorting complexity: O(n log n); copy requires O(n) extra space.
