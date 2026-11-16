@@ -1,0 +1,6 @@
+Corrected HashSet unique students: 2
+Students: [192311001 Arun, 192311002 Divya]
+TreeSet by registration number: 2
+HashMap unique keys: 1
+Expected corrected output: Unique students = 2
+Reason: equal objects must return the same hash code; changing key fields after insertion can make lookup fail.
