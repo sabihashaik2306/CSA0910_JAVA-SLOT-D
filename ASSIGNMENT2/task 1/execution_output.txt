@@ -1,0 +1,14 @@
+\nShort ticket | fields=5, repetitions=100
+String (+) avg ns: 70521
+StringBuilder avg ns: 22691
+StringBuffer avg ns: 4785
+\n10,000-field workload (reduced repetitions) | fields=50, repetitions=1000
+String (+) avg ns: 17437
+StringBuilder avg ns: 3734
+StringBuffer avg ns: 3744
+\nLarge ticket | fields=200, repetitions=500
+String (+) avg ns: 43529
+StringBuilder avg ns: 5522
+StringBuffer avg ns: 7231
+\nRecommendation: StringBuilder for a local ticket; StringBuffer or synchronized logging for a shared mutable log.
+Complexity: repeated concatenation may copy O(n^2) characters; StringBuilder append is amortized O(n).
