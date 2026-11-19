@@ -1,1 +1,2 @@
-
+# TASK 09 – B4: Final Engineering Decision
+MigratePasses validates a CSV file, reports rejected records, batch-inserts valid rows in one transaction and reports DatabaseMetaData. Run Task08/schema.sql, configure MySQL Connector/J and credentials, then run `java MigratePasses passes.csv`. For 12 campuses and concurrent counters, recommend a shared relational database with transactions and indexes; use text files for interchange/import, not concurrent central storage. Include your measured migration evidence and failure report.
