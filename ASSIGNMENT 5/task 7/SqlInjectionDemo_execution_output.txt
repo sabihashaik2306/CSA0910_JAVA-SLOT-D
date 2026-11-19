@@ -1,0 +1,5 @@
+Unsafe query built from crafted input:
+SELECT * FROM users WHERE id='admin' -- ' AND pwd='wrong-password'
+Safe query structure: SELECT 1 FROM users WHERE id=? AND pwd_hash=?
+PreparedStatement binds crafted text as data; it cannot remove the password predicate.
+Expected: unsafe string construction is injectable; parameterized login rejects invalid credentials.
