@@ -1,1 +1,2 @@
-
+# TASK 08 – B3: Statement vs PreparedStatement vs Batch
+Run Task08/schema.sql in MySQL. Add MySQL Connector/J to the classpath and update credentials in PassLoader.java. PassLoader completes TODO parameter binding, 1,000-row batching, commit and rollback. For full marks also implement Statement and non-batch PreparedStatement baselines, measure 10/1,000/10,000/100,000 rows, inspect ResultSetMetaData and test auto-commit versus transaction failure. Supplied code is the batch implementation, not the full measurement matrix.
